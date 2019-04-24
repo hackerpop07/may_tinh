@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+</head>
+<body>
+<h1> Caculator</h1>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<br></br>
+<button onclick="cong()">Addition(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(x)</button>
+<button onclick="chia()">Division(/)</button>
+<p id="ketqua"></p>
+<script>
+    function cong() {
+        let so1=document.getElementById("so1").value;
+        let so2=document.getElementById("so2").value;
+        let cong=so1+so2;
+        let s1=parseFloat(so1);
+        let s2=parseFloat(so2);
+        alert(cong);
+    }
+    function tru() {
+        let so1=document.getElementById("so1").value;
+        let so2=document.getElementById("so2").value;
+        let s1=parseFloat(so1);
+        let s2=parseFloat(so2);
+        let tru=so1-so2;
+        alert(tru);
+    }
+    function nhan() {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let nhan = so1 * so2;
+        let s1=parseFloat(so1);
+        let s2=parseFloat(so2);
+        alert(nhan);
+    }
+    function chia() {
+        let so1=document.getElementById("so1").value;
+        let so2=document.getElementById("so2").value;
+        so1=parseFloat(so1);
+        so2=parseFloat(so2);
+        let chia = so1/so2;
+        alert(chia);
+    }
+</script>
+</body>
+</html>
