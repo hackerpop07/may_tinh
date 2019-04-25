@@ -9,25 +9,29 @@
 <h1>Máy Tính</h1>
 <input type="text" id="output">
 <br>
-<button value="1" onclick="hienthi(this.value)">1</button>
-<button value="2" onclick="hienthi(this.value)">2</button>
-<button value="3" onclick="hienthi(this.value)">3</button>
-<button value="+" onclick="hienthi(this.value)">+</button>
+<button value="(" onclick="hienthi(this.value)" style="background: lemonchiffon">(</button>
+<button value=")" onclick="hienthi(this.value)" style="background: lemonchiffon">)</button>
+<button onclick="xoa()" >CE</button>
 <br>
-<button value="4" onclick="hienthi(this.value)">4</button>
-<button value="5" onclick="hienthi(this.value)">5</button>
-<button value="6" onclick="hienthi(this.value)">6</button>
-<button value="-" onclick="hienthi(this.value)">-</button>
+<button value="1" onclick="hienthi(this.value)" style="background: lemonchiffon">1</button>
+<button value="2" onclick="hienthi(this.value)" style="background: lemonchiffon">2</button>
+<button value="3" onclick="hienthi(this.value)" style="background: lemonchiffon">3</button>
+<button value="+" onclick="hienthi(this.value)" style="background: aqua">+</button>
 <br>
-<button value="7" onclick="hienthi(this.value)">7</button>
-<button value="8" onclick="hienthi(this.value)">8</button>
-<button value="9" onclick="hienthi(this.value)">9</button>
-<button value="*" onclick="hienthi(this.value)">x</button>
+<button value="4" onclick="hienthi(this.value)" style="background: lemonchiffon">4</button>
+<button value="5" onclick="hienthi(this.value)" style="background: lemonchiffon">5</button>
+<button value="6" onclick="hienthi(this.value)" style="background: lemonchiffon">6</button>
+<button value="-" onclick="hienthi(this.value)" style="background: aqua">-</button>
 <br>
-<button value="0" onclick="hienthi(this.value)">0</button>
-<button onclick="bang()">=</button>
-<button onclick="xoa()">C</button>
-<button value="/" onclick="hienthi(this.value)">/</button>
+<button value="7" onclick="hienthi(this.value)" style="background: lemonchiffon">7</button>
+<button value="8" onclick="hienthi(this.value)" style="background: lemonchiffon">8</button>
+<button value="9" onclick="hienthi(this.value)" style="background: lemonchiffon">9</button>
+<button value="*" onclick="hienthi(this.value)" style="background: aqua">x</button>
+<br>
+<button value="0" onclick="hienthi(this.value)" style="background: lemonchiffon">0</button>
+<button value="," onclick="hienthi(this.value)" style="background: lemonchiffon">.</button>
+<button onclick="bang()" >=</button>
+<button value="/" onclick="hienthi(this.value)" style="background: aqua">/</button>
 <script>
     function hienthi(value) {
         document.getElementById("output").value += value;
