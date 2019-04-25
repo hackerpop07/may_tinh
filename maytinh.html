@@ -11,7 +11,8 @@
 <br>
 <button value="(" onclick="hienthi(this.value)" style="background: lemonchiffon">(</button>
 <button value=")" onclick="hienthi(this.value)" style="background: lemonchiffon">)</button>
-<button onclick="xoa()" >CE</button>
+<button onclick="xoa()">CE</button>
+<button onclick="dele()">Xóa</button>
 <br>
 <button value="1" onclick="hienthi(this.value)" style="background: lemonchiffon">1</button>
 <button value="2" onclick="hienthi(this.value)" style="background: lemonchiffon">2</button>
@@ -30,20 +31,28 @@
 <br>
 <button value="0" onclick="hienthi(this.value)" style="background: lemonchiffon">0</button>
 <button value="," onclick="hienthi(this.value)" style="background: lemonchiffon">.</button>
-<button onclick="bang()" >=</button>
+<button onclick="bang()">=</button>
 <button value="/" onclick="hienthi(this.value)" style="background: aqua">/</button>
 <script>
     function hienthi(value) {
         document.getElementById("output").value += value;
     }
-    function bang() {
-        let b =document.getElementById("output").value;
-        A=eval(b);
-        document.getElementById("output").value=A;
-    }
+
     function xoa() {
+        X=document.getElementById("output").value;
+        x=X.substring(0,X.length -1);
+        document.getElementById("output").value =x;
+    }
+
+    function bang() {
+        let b = document.getElementById("output").value;
+        A = eval(b);
+        document.getElementById("output").value = A;
+    }
+    function dele() {
         document.getElementById("output").value = '';
     }
+
 </script>
 </body>
 </html>
